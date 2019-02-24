@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to destino.</title>
+<link rel="stylesheet" href="w3.css">
+<style>
+
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 60%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+/* Images used */
+.img1 { background-image: url("17.jpg"); }
+.img2 { background-image: url("18.jpg"); }
+.img3 { background-image: url("22.jpg"); }
+.img4 { background-image: url("25.jpg"); }
+.img5 { background-image: url("11.jpg"); }
+.img6 { background-image: url("19.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+ 
+ 
+  font-size: 10px;
+ 
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color: grey;">
+	<nav class="w3-bar w3-black">
+	<a href="home.html" class="w3-button w3-bar-item">destino</a>
+  <a href="signup.html"  class="w3-button w3-bar-item" style="float:right;">Sign Up</a>
+  <a href="login.html"  class="w3-button w3-bar-item"  style="float:right;">Log In</a>
+  <a href="about.html"  class="w3-button w3-bar-item"  style="float:right;">About Us</a>
+  </nav>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+<div class="bg-text">
+	<form  action="/action_page.php" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form></div>
+
+<footer class="w3-container w3-center w3-black " style="height:35px; padding-top:5px;">
+  @copyright by destino.com
+</footer>
+</body>
+</html>

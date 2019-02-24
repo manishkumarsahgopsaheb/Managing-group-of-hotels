@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to destino..</title>
+<link rel="stylesheet" href="w3.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+i{
+font-size:120px;
+color:white;
+margin-left:50px;
+font-family:harlow solid;
+color: white;
+ 
+  -webkit-animation: logo 1s ease-in-out infinite alternate;
+  -moz-animation: logo 1s ease-in-out infinite alternate;
+  animation: logo 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes logo {
+  from {
+     text-shadow: 0 0 10px green, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px green, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+</style>
+</head>
+<body style="background-color: grey;">
+<nav class="w3-bar w3-black">
+  <a href="home.html" class="w3-button w3-bar-item" >destino</a>
+  <a href="signup.html" class="w3-button w3-bar-item"  style="float:right;">Sign Up</a>
+  <a href="login.html" class="w3-button w3-bar-item"  style="float:right;">Log In</a>
+  <a href="about.html" class="w3-button w3-bar-item"  style="float:right;">About Us</a>
+</nav>
+<div class="main">
+<font style="color: white; font-size: 100px;"><i class="logo"><u><a href="home.html">destino....</a></u></i></font> 
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="font-family: chiller;">SCROLL DOWN</span>
+  </div>
+</div>
+<div style="color: #777;">
+<section>
+  <img class="mySlides" src="20.jpg"
+  style="width:100%">
+   <img class="mySlides" src="25.jpg"
+  style="width:100%">
+   <img class="mySlides" src="24.jpg"
+  style="width:100%">
+  <img class="mySlides" src="21.jpg"
+  style="width:100%">
+  <img class="mySlides" src="22.jpg"
+  style="width:100%">
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 400);
+}
+</script>
+</div>
+
+<br><br>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="font-family: chiller;">INTRODUCTION</span>
+  </div>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+
+  <p style="font-family: Broadway;">Welcome to destino. | Hotels on a go.... 
+
+This is website to manage the GROUP OF HOTELS. 
+It means here we are providing availability to different hotels in distinct cities to the users easily.
+Here the user can Sign Up for the first time and get themselves registered with us.
+They can Login later with their username and password for further use.
+We are helping people make their vacations rememberable , to help them in getting better facilities, 
+choose better work or business meeting places ... all at affordable prices.
+
+</p>
+<p style="font-family: Broadway;">Things you can do using destino</p>
+<ul type="square" style="font-family:Broadway;">
+<li>Search for hotels at your destination in given search box.</li>
+<li>Select your preference and get your ideal done.</li>
+<li>Sign Up or Log In for better deals.</li>
+<li>Bookings in advance for the hotel of your choice , make your trip more smooth and easy.</li>
+</ul>
+<p style="font-size:50px;">ENJOY !!!</p>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border" style="font-family: chiller;">MEET THE TEAM </span>
+  </div>
+</div>
+
+<br><br><br>
+<div style="color: #777;">
+<table style="margin-left: 170px;">
+<tr><td><img src="20180408_153947.jpg" style="width:40%"><p  style="color: white;"> Name : ANUBHUTI RANI <br> ROLL NO. : 1607002 <br> BRANCH : INFORMATION TECHNOLOGY <br> email ID : anubhutiranii99@gmail.com<br><br><br><br></p></td><td><img src="himanshu.jpg" style="width:40%"><p  style="color: white;"> Name : HIMANSHU SINGH <br> ROLL NO. : 1607012 <br> BRANCH : INFORMATION TECHNOLOGY <br> email ID : <br><br><br><br></p></td></tr>
+
+<tr>><td><img src="manish.jpg" style="width:40%"><p  style="color: white;"> Name : MANISH KUMAR <br> ROLL NO. : 1607023 <br> BRANCH : INFORMATION TECHNOLOGY <br> email ID : bright.manish01@gmail.com<br><br><br><br></p></td><td><img src="manish_sah.jpg" style="width:40%"><p  style="color: white;"> Name : MANISH KUMAR SAH <br> ROLL NO. : 1607030 <br> BRANCH : INFORMATION TECHNOLOGY <br> email ID : mk6746277@gmail.com<br><br><br><br></p></td></tr></table>
+ </div>
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="font-family: chiller;">CONTACT US </span>
+  </div>
+</div>
+<div style="color: #777;background-color:black;text-align:center;padding:50px 80px;text-align: justify; color:white;">
+  <p> 
+<u>contact us at : </u><br>
+ <br> MOBILE NO : 9876543210<br>
+ PHONE NO. : 0612-1234567<br>
+ email ID : destino1234@abc.com<br>
+  </p>
+</div>
+<br><br><br><br><br><br>
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="font-family: chiller;">THANK YOU! </span>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+
+<footer class="w3-container  w3-center w3-black" style="padding-top:5px; ">
+ @copyright by destino.com
+</footer>
+
+</body>
+</html>
